@@ -4,8 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepublish": "node ./history.js --text prepublish",
+    "prepare": "node ./history.js --text prepare",
+    "prepublishOnly": "node ./history.js --text prepublishOnly",
+    "prepack": "node ./history.js --text prepack",
+    "postpack": "node ./history.js --text postpack",
+    "preinstall": "node ./history.js --text preinstall",
+    "postinstall": "node ./history.js --text postinstall",
+    "clean": "node ./history.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "12.0.1"
+  }
 }
