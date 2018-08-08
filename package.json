@@ -15,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "history.js"
+    "history.js",
+    "log.txt"
   ],
   "author": "",
   "license": "ISC"
