@@ -12,8 +12,16 @@
     "preinstall": "HOOK_NAME=\"preinstall\" node ./history.js",
     "postinstall": "HOOK_NAME=\"postinstall\" node ./history.js",
     "clean": "node ./history.js",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "log.txt",
+    "history.js"
+  ],
+  "devDependencies": {
+    "typescript": "3.0.1"
+  }
 }
