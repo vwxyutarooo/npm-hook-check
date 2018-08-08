@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "HOOK_NAME=\"prepublish\" node ./history.js",
-    "prepare": "HOOK_NAME=\"prepare\" node ./history.js",
+    "prepare": "HOOK_NAME=\"prepare\" node ./history.js && npm run tsc",
     "prepublishOnly": "HOOK_NAME=\"prepublishOnly\" node ./history.js",
     "prepack": "HOOK_NAME=\"prepack\" node ./history.js",
     "postpack": "HOOK_NAME=\"postpack\" node ./history.js",
@@ -18,8 +18,7 @@
   "author": "",
   "license": "ISC",
   "files": [
-    "log.txt",
-    "history.js"
+    "lib"
   ],
   "devDependencies": {
     "typescript": "3.0.1"
